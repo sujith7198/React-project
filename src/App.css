@@ -1,11 +1,130 @@
-.App {
-  text-align: center;
+
+
+
+.HEADER{
+  height: 100px;
+  background-color: blue;
+}
+.CONTAINER{
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  max-width: 75%;
 }
+
+#searchbutton{
+  position: relative;
+  right: 0px;
+}
+.input-group{
+  margin-right: 100px;
+}
+.BUTTEN{
+margin-left: 20px;
+}
+
+.BODY-1{
+  margin: 0 !important;
+  max-width: 100% !important;
+  background-color: rgb(244, 240, 240);
+}
+.ALL-1{
+ padding-top: 100px;
+}
+.MR-3{
+  margin-right: 20px !important;
+}
+.circle-background {
+  width: 30px; 
+  height: 30px;
+ 
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-control {
+  padding: 20px;
+}
+.TOP-1{
+  height: 15px;
+  width: 40%;
+  border-radius: 10px;
+  background-color: burlywood;
+  text-align: center !important;
+  
+}
+.BODY_1{
+  background-color: rgb(158, 89, 89);
+  border-style: solid;
+}
+.CONTAINER_1{
+  margin-top: 80px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+}
+
+.decrement, .increment {
+  background-color: #fff;
+  color: gray;
+  border: none;
+  padding: 10px 8px;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.decrement:hover, .increment:hover {
+  background-color: #fff;
+}
+.value {
+  font-size: 24px;
+  margin: 0 10px;
+}
+.card_width{
+  padding: 5px 5px 0px 5px;
+  border-radius:0 40px 0px 40px;
+background-color: yellowgreen;
+}
+.no-hover {
+  transition: none !important;
+}
+.fon,.heading_1{
+  font-family: 'Baloo 2', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Playpen Sans', cursive;
+font-size: 48px;
+}
+
+.image_1 {
+  transition: transform 0.3s; /* Add a smooth transition effect */
+}
+
+.image_1:hover {
+  transform: scale(1.1); /* Scale up the image on hover */
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Dancing+Script:wght@500&family=Playpen+Sans:wght@600&display=swap');
+
+
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Dancing+Script:wght@500&family=Playpen+Sans:wght@600&display=swap');
+.fon{
+  font-family: 'Baloo 2', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Playpen Sans', cursive;
+font-weight: 1200;
+} */
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
