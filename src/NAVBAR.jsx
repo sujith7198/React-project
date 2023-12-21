@@ -2,7 +2,7 @@
 
 function NAVBAR(){
     return(   
-    <p></p>
+    <p>hi</p>
   )
 }
 export default NAVBAR

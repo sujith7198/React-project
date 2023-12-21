@@ -29,6 +29,7 @@ import FOOTER from './footer';
 import Badge from 'react-bootstrap/Badge';
 import cardData from "./Data";
 import Registration from './Loginpage';
+import ADDCART from './Addcart';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -61,7 +62,7 @@ function App() {
     <Navbar sticky="top" collapseOnSelect expand="lg" className="bg-body-tertiary py-4">
       <Container>
         <Navbar.Brand as={Link} to="/home">
-          <img src={pop} alt="" />
+          <div className='banner'><img className='img-fluid' src={pop} alt="" /></div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -71,7 +72,7 @@ function App() {
                 size="lg"
                 type="text"
                 placeholder="Search" 
-                style={{ width: '530px', height: '38px', fontSize: '13px' }} 
+                style={{ width: '580px', height: '38px', fontSize: '13px' }} 
                 onChange={(event) => {
                   setSearchTerm(event.target.value);
                 }}                
@@ -138,11 +139,10 @@ function App() {
       <Route path="/" element={<HomeComponent searchTerm={searchTerm}/>} />
       <Route path="/home" element={<HomeComponent  searchTerm={searchTerm}/>} />
       <Route path="/deets" element={ <Location />} />
-      <Route path="/memes" element={<CartComponent  onCartIncrement={handleCartIncrement}/>} />
+      <Route path="/memes" element={<ADDCART onCartIncrement={handleCartIncrement}/>} />
       <Route path="/about" element={<ABOUT />} />
       <Route path="/mem" element={<CardComponent />} />
-                <Route path="/registration" element={<Registration onRegistrationComplete={handleRegistrationComplete} />} />
-
+        <Route path="/registration" element={<Registration  />} />
     </Routes>
   <FOOTER />
     </>

@@ -1,74 +1,67 @@
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { CiLocationOn } from "react-icons/ci";
-import { FaMobileScreen } from "react-icons/fa6";
-import { CiMail } from "react-icons/ci";
+import { CiLocationOn } from 'react-icons/ci';
+import { FaMobileScreen } from 'react-icons/fa6';
+import { CiMail } from 'react-icons/ci';
+import pop2 from './img/ft-1.png'
+import pop1 from './img/ft-2.png'
 
-function FOOTER(){
-    return(<>
-      <div style={{ width: "100%", backgroundColor: "black" }}>
-        <Container style={{  padding: "20px 0" }}>
-          <Row style={{ color: "white" }}>
-            <Col style={{ marginRight: '20px' }}>
-              <Row><h3>About</h3></Row>
-              <Row>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation u</Row>
-            </Col>
-            <Col style={{ marginLeft: '20px', marginRight: '20px' }}>
-              <Row><h3>Menu</h3></Row>
-              <Row>
-                <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
-                  <li style={{ marginBottom: '8px' }}>
-                    <a href="/home" style={{ textDecoration: 'none', color: 'inherit' }}>Home</a>
-                  </li>
-                  <li style={{ marginBottom: '8px' }}>
-                    <a href="/about" style={{ textDecoration: 'none', color: 'inherit' }}>About Us</a>
-                  </li>
-                  <li style={{ marginBottom: '8px' }}>
-                    <a href="/gallery" style={{ textDecoration: 'none', color: 'inherit' }}>Gallery</a>
-                  </li>
-                  <li style={{ marginBottom: '8px' }}>
-                    <a href="/services" style={{ textDecoration: 'none', color: 'inherit' }}>Services</a>
-                  </li>
-                  <li style={{ marginBottom: '8px' }}>
-                    <a href="/contact" style={{ textDecoration: 'none', color: 'inherit' }}>Contact Us</a>
-                  </li>
-                </ul>
-              </Row>
-            </Col>
 
-            <Col>
-              <Row><h3>Useful Link</h3></Row>
-              <ul style={{ listStyleType: 'none', padding: 0 }}>
-                <li>Adipiscing </li>
-                <li>Elit, sed do</li>
-                <li>Eiusmod </li>
-                <li>Tempor </li>
-                <li>incididunt</li>
-              </ul>
+function FOOTER() {
+  return (
+    <>
+      <div style={{ width: '100%', backgroundColor: '#AF8A64', color: 'white' }}>
+      <Container style={{ padding: '20px 0' }}>
+        <div style={{ backgroundColor: '#AF8A64' }}>
+          <Row style={{ backgroundColor: '#AF8A64' }}>
+            <Col style={{ borderRight: '3px solid gray', height:"30px", paddingRight: '120px' }}>
+              <h5 style={{ textAlign: 'center' }}> Our Address</h5>
+              <p style={{ textAlign: 'center' }}>12 Loram Ipusm, Australiya </p>
+            </Col>
+            <Col style={{ borderRight: '3px solid gray' , height:"30px", paddingRight: '120px' }}>
+              <h5 style={{ textAlign: 'center' }}>Call us free</h5>
+              <p style={{ textAlign: 'center' }}> +01 1234567890/098234555</p>
             </Col>
             <Col>
-              <Row>
-                <h3>Contact Us</h3>
-              </Row>
-              <ul style={{ listStyleType: 'none', padding: 0 }}>
-                <li style={{ marginBottom: '8px' }}>
-                  <CiLocationOn style={{ marginRight: '8px' }} />
-                  Address: Loram Ipusm
-                </li>
-                <li style={{ marginBottom: '8px' }}>
-                  <FaMobileScreen style={{ marginRight: '8px' }} />
-                  Call: +01 1234567890
-                </li>
-                <li style={{ marginBottom: '8px' }}>
-                  <CiMail style={{ marginRight: '8px' }} />
-                  Email: mail@domain.com
-                </li>
-              </ul>
+              <h5 style={{ textAlign: 'center' }}>Send Email now</h5>
+              <p style={{ textAlign: 'center' }}>information@company.com</p>
             </Col>
           </Row>
-        </Container>
-      </div>
-    </>)
+        </div></Container>
+    </div>
+        <div style={{backgroundColor:"#411B1C", color:"white"}}><Container>
+        <Row >
+          <Col style={{ borderRight: '2px solid gray', height:"20px", marginTop:"20px",paddingRight: '50px', textAlign: 'center' }}>
+            <p>Search</p>
+          </Col>
+          <Col style={{ borderRight: '2px solid gray', height:"20px", marginTop:"20px",paddingRight: '50px', textAlign: 'center'  }}>
+            <p>Sitemap</p>
+          </Col>
+          <Col style={{borderRight: '2px solid gray', height:"20px", marginTop:"20px",paddingRight: '50px', textAlign: 'center'  }}>
+            <p>Terms</p>
+          </Col>
+          <Col style={{ borderRight: '2px solid gray', height:"20px", marginTop:"20px",paddingRight: '50px', textAlign: 'center'  }}>
+            <p>Advance Search</p>
+          </Col>
+          <Col style={{ borderRight: '2px solid gray', height:"20px", marginTop:"20px",paddingRight: '50px', textAlign: 'center'  }}>
+            <p>Contact us</p>
+          </Col>
+          <Col style={{borderRight: '2px solid gray', height:"20px", marginTop:"20px",paddingRight: '40px', textAlign: 'center'  }}>
+            <p>About Us</p>
+          </Col>
+          <Col style={{marginTop:"20px"}}>
+            <p>Privacy Policy</p>
+          </Col>
+        </Row>
+        <Row style={{ textAlign: 'center',padding:"15px" }}>
+          <p>© 2023, Cafebrew - Coffee Store (Password: Demo) Powered By Shopify</p>
+        </Row>
+        <Row></Row></Container></div>
+      
+    </>
+  );
 }
+
 export default FOOTER;
